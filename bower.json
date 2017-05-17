@@ -1,0 +1,23 @@
+{
+  "name": "My firts boostrap project",
+  "homepage": "este es mi primer poryecto basado en boostrap",
+  "authors": [
+    "DanFN <josedaniel.sanchez@alumno.uttehuacan.edu.mx>"
+  ],
+  "description": "Mi primer poryecto en boostrap",
+  "main": "index.html",
+  "keywords": [
+    "boostrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "boostrap#^3.3.7"
+  }
+}
