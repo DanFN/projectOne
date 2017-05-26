@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/style.css">
   </head>
   <body>
-    <!-- Cuando se usa navbar-fixed, siempre se ve el menu, si se usa, static, desaparese
+    <!-- Cuando se usa nav
+    bar-fixed, siempre se ve el menu, si se usa, static, desaparese
    si se desliza la pagina
    navbar-default ->color normal
    navbar-inverse ->color inverso
    -->
-     <div class="navbar navbar-default navbar-fixed-top">
+     <div class="navbar navbar-default navbar-static-top"> <!-- fixed= lo pone encima. Stattic==empuja los contenedores-->
        <div class="container">
-         <a href="#" class="navbar-brand">Up running with boostrap</a>
+         <div class="navbar-header">
+           <a href="#" class="navbar-brand">Up running with boostrap</a>
          <!-- Barra de navegación, con el boostrap
      nav-> forma de navegación
      nav-tabs, efecto circular, como pildoras.
@@ -22,16 +24,27 @@
      -->
          <!-- sr-only, permite ocultar el texto de un contenido, en este caso el boton-->
          <!-- data-toggle="collapse" (para dar begeibor)  data-target=".navbar-collapse-->
-         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-           <span class="sr-only">Toggle navigation</span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-         </button>
-         <ul class="nav nav-pills navbar-nav navbar-right collapse navbar-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         </div>
+         <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
            <li><a href="#">Home</a></li>
            <li><a href="#">Reservations</a></li>
-           <li><a href="#">ClassRoom</a></li>
+           <li><a href="#" data-toggle="dropdown">About<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Conact Us</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Blog</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Twetter</a></li>
+                <li><a href="#">Facebook</a></li>
+              </ul>
+           </li>
          </ul>
        </div>
      </div>
