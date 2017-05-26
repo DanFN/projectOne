@@ -26,10 +26,11 @@ body{
 }
 @media only screen and (max-width: 768px){
   body{
-    margin-bottom: 400px;
+    margin-bottom: 230px;
   }
   .footer{
-    height: 400px;
+    height: 230px;
+    font-size: 0.43em;
   }
 
 }

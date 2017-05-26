@@ -7,14 +7,37 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/style.css">
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-         <h1>Up and running with bootstrap</h1>
-        </div>
-      </div>
-      <!-- /.row -->
+    <!-- Cuando se usa navbar-fixed, siempre se ve el menu, si se usa, static, desaparese
+   si se desliza la pagina
+   navbar-default ->color normal
+   navbar-inverse ->color inverso
+   -->
+     <div class="navbar navbar-default navbar-fixed-top">
+       <div class="container">
+         <a href="#" class="navbar-brand">Up running with boostrap</a>
+         <!-- Barra de navegación, con el boostrap
+     nav-> forma de navegación
+     nav-tabs, efecto circular, como pildoras.
+     navbar-> barra de navegación
+     -->
+         <!-- sr-only, permite ocultar el texto de un contenido, en este caso el boton-->
+         <!-- data-toggle="collapse" (para dar begeibor)  data-target=".navbar-collapse-->
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <ul class="nav nav-pills navbar-nav navbar-right collapse navbar-collapse">
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Reservations</a></li>
+           <li><a href="#">ClassRoom</a></li>
+         </ul>
+       </div>
+     </div>
+    <!-- /.conteiner -->
 
+    <div class="container">
       <div class="row well well-lg">
         <div class="col-md-6 lead">
           <h2>Tha fatest way to learn</h2>
@@ -75,7 +98,7 @@
 
           <div class="col-xs-6 col-sm-2 col-md-3">
             <h4>Links</h4>
-            <ul>
+            <ul class="list-unstyled">
               <li><a href="#">Home</a></li>
               <li><a href="#">Reservations</a></li>
               <li><a href="#">Classroom</a></li>
@@ -88,7 +111,7 @@
 
           <div class="col-xs-6 col-sm-2 col-md-3">
             <h4>Stay in Touch</h4>
-            <ul>
+            <ul class="list-unstyled">
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
               <li><a href="#">Blog</a></li>
